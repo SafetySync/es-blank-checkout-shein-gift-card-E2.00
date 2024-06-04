@@ -1,0 +1,31 @@
+var dayNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+var monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var minutes = "Minutos";
+var seconds = "Segundos";
+    var modalOptions = {
+        backdrop: "static",
+        keyboard: false,
+    };
+
+function scrollTo(a) {
+    if ($("#" + a).length) {
+        var c = $("#" + a).offset();
+        var b = c.top;
+        $("html,body").animate({ scrollTop: b }, { duration: "slow" });
+    }
+}
+jQuery(document).ready(function() {
+    function f(g) { if (g < 10) { g = "0" + g; } return g; }
+    
+    var b = new Date();
+    var currentYear = b.getFullYear(); // Получаем текущий год
+    
+    var a = f(b.getHours()) + ":" + f(b.getMinutes());
+    jQuery(".p_var-dia").text(b.getDate());
+    jQuery(".p_var-mes").text(b.getMonth());
+    jQuery(".p_var-anyo").text(currentYear); // Устанавливаем текущий год
+    jQuery(".p_var-dia_nombre").text(dayNames[b.getDay()]);
+    jQuery(".p_var-mes_nombre").text(monthNames[b.getMonth()]);
+});
+
+

